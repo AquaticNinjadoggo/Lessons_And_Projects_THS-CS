@@ -15,6 +15,8 @@ import java.util.Random;
  */
  
 public class Proj1 {
+     
+
    /** Defining the only Random variable you may (and must) use. 
    DO NOT CHANGE THIS LINE OF CODE.
    */
@@ -31,6 +33,13 @@ public class Proj1 {
     * Line 7: Enter your choice:
     */
    public static void printMenu() {
+     System.out.println("                 ");
+     System.out.println("u/U: Update");
+     System.out.println("f/F: Find & Replace");
+     System.out.println("s/S: Statistics");
+     System.out.println("e/E: Exit");
+     System.out.println("-------------");
+     System.out.println("Enter your choice: ");
 
    }
 
@@ -42,17 +51,35 @@ public class Proj1 {
     * @return true if the character is special character, false otherwise.
     */
    public static boolean isSpecial(char c) {
-    return false; //REPLACE THIS
+     if (Character.isDigit(c) || ){
+          System.out.println("The statement contains a special character"))));
+          return true;
+     }else {}
+          System.out.println("The statement does not contain a special character")
+          return false;
    }
+   }
+          
+     
+   
 
    /**
     * This method determines if a character is special character or not.
     * Punctuation characters are !?.,'":;-_
     * @param c the character
     * @return true if the character is punctuation, false otherwise.
-    */
+    */ string manipulation
    public static boolean isPunctuation(char c) {
-        return false; //REPLACE THIS
+     if (((c.contains('!') || c.contains("?") || c.contains(".") ||c.contains(",") || c.contains("'") || c.contains(" ") || c.contains(":") || c.contains(";") || c.contains("-") ||  c.contains("_"))) {
+          System.out.println("This statement contains a punctuation character");
+          return true;
+     else {
+          System.out.println("This statement does not contain a punctuation character")
+          return false;
+     }
+     }
+
+     //REPLACE THIS
    }
 
    /**
@@ -136,6 +163,16 @@ public class Proj1 {
     * @param args commandline args
     */
    public static void main(String[] args) {
+     scanner myScanner = new Scanner(System.in);
+     System.out.println("Enter your choice: ");
+     String choice = myScanner.nextln();
+     myScanner.close();
+     while (choice != "e");
+     printMenu();
 
+     
+
+
+     
    }
 }

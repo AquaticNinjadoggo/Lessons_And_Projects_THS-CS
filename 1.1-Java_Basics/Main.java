@@ -40,3 +40,14 @@ public class Main{
 
     }
 }
+public class Main{
+    public static void main(String[] args){
+        String myName = "Sophia";
+        String myAge;
+        myAge = 14;
+        String ifHappy = "false";
+        double myHeight = 5.1;
+        System.out.println("My name is " + myName + "and I am " + myAge + "years old. The statement i am happy is " + ifHappy + ".I am {myHeight} feet tall! ");
+    }
+
+}
